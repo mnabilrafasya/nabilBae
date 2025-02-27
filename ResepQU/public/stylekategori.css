@@ -1,0 +1,41 @@
+body {
+  font-family: "Poppins", sans-serif; /* Terapkan font Poppins ke seluruh halaman */
+  padding-top: 50px;
+}
+
+.card-body {
+  display: flex; /* Mengaktifkan flexbox */
+  flex-direction: column; /* Elemen disusun secara vertikal */
+  align-items: center; /* Menengahkan elemen secara horizontal */
+  text-align: center; /* Menengahkan teks secara horizontal */
+}
+
+.card {
+  border: none; /* Menghilangkan border pada card */
+  box-shadow: none; /* Menghilangkan bayangan jika ada */
+}
+
+.card:hover .card-title a,
+.card:hover .card-text a {
+  color: #1cc8d1 !important; /* Mengubah warna teks menjadi biru saat hover */
+  transition: color 0.3s ease; /* Menambahkan efek transisi */
+}
+
+.card-img-top {
+  width: 100%; /* Memastikan gambar mengisi lebar card */
+  height: 200px; /* Tentukan tinggi yang sama untuk semua gambar */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+.card img {
+  transition: transform 0.2s; /* Efek transisi */
+  border-radius: 10px;
+}
+
+.card img:hover {
+  transform: scale(1.05); /* Membesarkan gambar sedikit saat hover */
+}
+
+.custom-footer {
+  background-color: #0d6efd;
+}

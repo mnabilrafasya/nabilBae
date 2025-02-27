@@ -1,0 +1,112 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  padding-top: 70px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.ingredients,
+.instructions {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ingredients ul,
+.instructions ol {
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+.ingredients ul li,
+.instructions ol li {
+  margin-bottom: 10px;
+}
+.instructions ol li {
+  display: flex;
+  align-items: flex-start;
+}
+.instructions ol li span {
+  font-weight: bold;
+  color: blue;
+  margin-right: 10px;
+}
+
+.img-fluid {
+  object-fit: cover; /* Menjaga proporsi gambar */
+  width: 100%; /* Gambar memenuhi lebar kontainer */
+  height: 300px; /* Atur tinggi agar konsisten */
+  max-width: 100%; /* Hindari gambar melebihi kontainer */
+  border-radius: 8px; /* Untuk sudut melengkung (opsional) */
+}
+
+.card-body {
+  display: flex; /* Mengaktifkan flexbox */
+  flex-direction: column; /* Elemen disusun secara vertikal */
+  align-items: center; /* Menengahkan elemen secara horizontal */
+  text-align: center; /* Menengahkan teks secara horizontal */
+}
+
+.card {
+  box-shadow: none; /* Menghilangkan bayangan jika ada */
+}
+
+.card:hover .card-body h5 {
+  color: #1cc8d1 !important; /* Mengubah warna teks menjadi biru saat hover */
+  transition: color 0.3s ease; /* Menambahkan efek transisi */
+}
+
+.card img {
+  transition: transform 0.2s; /* Efek transisi */
+  height: 200px;
+  width: 400px;
+}
+
+.card img:hover {
+  transform: scale(1.05); /* Membesarkan gambar sedikit saat hover */
+}
+.badge {
+  font-size: 0.875rem;
+  margin-right: 5px;
+}
+.btn-more {
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  width: 500px;
+  margin: 30px auto;
+  text-decoration: none;
+  transition: 0.3s
+}
+
+.recipe-title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.container {
+  border: none;
+}
+.mt-5 {
+  border: none !important; 
+  background-color: #f8f9fa; 
+  padding: 20px; /
+}
+.card.position-relative {
+  border: none;
+}
+.btn-more:hover {
+  transform: scale(1.05); /* Membesarkan teks sedikit saat hover */
+}
+
+.custom-footer {
+  background-color: #0d6efd;
+}

@@ -1,0 +1,113 @@
+body {
+  font-family: "Poppins", sans-serif; /* Terapkan font Poppins ke seluruh halaman */
+}
+
+.card-img-top {
+  width: 100%; /* Memastikan gambar mengisi lebar card */
+  height: 200px; /* Tentukan tinggi yang sama untuk semua gambar */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+.card {
+  min-height: 350px; /* Menetapkan tinggi minimum untuk semua card */
+}
+.card img {
+  transition: transform 0.2s; /* Efek transisi */
+}
+
+.card img:hover {
+  transform: scale(1.05); /* Membesarkan gambar sedikit saat hover */
+}
+
+.card {
+  border: none; /* Menghilangkan border pada card */
+  box-shadow: none; /* Menghilangkan bayangan jika ada */
+}
+.card:hover .card-title,
+.card:hover .card-text {
+  color: #1cc8d1; /* Mengubah warna teks menjadi biru saat hover */
+  transition: color 0.3s ease; /* Menambahkan efek transisi */
+}
+
+.carousel {
+  max-height: 500px; /* Atur tinggi maksimum carousel */
+}
+
+.carousel-img {
+  height: 500px; /* Atur tinggi gambar sesuai kebutuhan */
+  width: 100%; /* Pastikan lebar gambar 100% dari kontainer */
+  object-fit: cover; /* Menjaga aspek rasio gambar */
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.carousel-img:hover {
+  transform: scale(1.05); /* Zoom gambar saat hover */
+  filter: brightness(0.8); /* Menggelapkan gambar saat hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan saat hover */
+}
+
+.caption-overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay gelap untuk caption */
+  padding: 15px; /* Tambahkan padding untuk caption */
+  border-radius: 10px; /* Sudut melengkung untuk caption */
+  display: inline-block; /* Membuat overlay sesuai dengan lebar konten */
+  max-width: 90%; /* Batasi lebar overlay agar tidak terlalu lebar */
+  margin-bottom: 20px; /* Tambahkan margin bawah untuk jarak dari tepi */
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  font-weight: bold;
+  color: white; /* Ubah warna teks menjadi putih untuk kontras */
+  font-size: 24px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Lebar tombol */
+  height: 50px; /* Tinggi tombol */
+  background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang tombol menjadi putih */
+  border-radius: 50%; /* Membuat tombol bulat */
+  border: none; /* Menghilangkan border */
+  display: flex; /* Menggunakan flexbox untuk memusatkan ikon */
+  justify-content: center; /* Memusatkan horizontal */
+  align-items: center; /* Memusatkan vertikal */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+  top: 50%; /* Menempatkan tombol di tengah vertikal */
+  transform: translateY(-50%); /* Menggeser tombol ke atas agar tepat di tengah */
+  transition: background-color 0.3s ease; /* Menambahkan transisi untuk efek hover */
+}
+
+.carousel-control-prev {
+  left: 10px; /* Jarak dari kiri */
+}
+
+.carousel-control-next {
+  right: 10px; /* Jarak dari kanan */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Menghilangkan latar belakang ikon */
+  width: 20px; /* Ukuran ikon */
+  height: 20px; /* Ukuran ikon */
+}
+
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+  font-size: 20px; /* Ukuran ikon */
+  color: white; /* Ubah warna ikon menjadi putih untuk kontras dengan latar belakang hitam */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 1); /* Warna latar belakang menjadi hitam saat hover */
+}
+
+.carousel-control-prev:active,
+.carousel-control-next:active {
+  background-color: rgba(0, 0, 0, 1); /* Warna latar belakang lebih gelap saat ditekan */
+}
+
+.custom-footer {
+  background-color: #0d6efd;
+}
